@@ -1,0 +1,129 @@
+:root {
+  /* fonts */
+  --main-font: "Work Sans", sans-serif;
+  --secondary-font: "Space Mono", sans-serif;
+  /* text color */
+  --main-txt-cl: #ffffff;
+  --secondary-txt-cl: #858584;
+  --btn-color: #A259FF;
+  --btn-txt-cl: #2B2B2B;
+  --transition-fast: 300ms ease-in-out;
+  --transition-slow: 500ms ease-in-out;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+body {
+  position: relative;
+  background-color: #2B2B2B;
+}
+
+img {
+  display: block;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.title {
+  font-family: var(--main-font);
+  font-style: normal;
+  font-weight: 600;
+  font-size: 38px;
+  line-height: 120%;
+  text-transform: capitalize;
+  color: var(--main-txt-cl);
+}
+
+.subtitle {
+  font-family: var(--main-font);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 160%;
+  text-transform: capitalize;
+  color: var(--main-txt-cl);
+}
+
+.list-title {
+  font-family: var(--main-font);
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 140%;
+  text-transform: capitalize;
+  color: var(--main-txt-cl);
+}
+
+.name {
+  font-family: var(--main-font);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  color: var(--main-txt-cl);
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.container {
+  width: 100%;
+  max-width: 1050px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.btn {
+  font-family: var(--main-font);
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 140%;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 19px 30px;
+  color: var(--main-txt-cl);
+  border-radius: 20px;
+}
+
+.btn-purple {
+  border: none;
+  background-color: var(--btn-color);
+}
+
+.btn-transparent {
+  background-color: transparent;
+  border: 2px solid var(--btn-color);
+}
+
+/*# sourceMappingURL=style.css.map */

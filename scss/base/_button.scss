@@ -1,0 +1,20 @@
+.btn{
+    font-family: var(--main-font);
+    @include fonts(normal, 600, 16px, 140%);
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 19px 30px;
+    color: var(--main-txt-cl);
+    border-radius: 20px;
+}
+
+.btn-purple{
+    border: none;
+    background-color: var(--btn-color);
+}
+
+.btn-transparent{
+    background-color: transparent;
+    border: 2px solid var(--btn-color);
+}
