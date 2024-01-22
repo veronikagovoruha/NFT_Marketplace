@@ -1,0 +1,19 @@
+//utils styles
+@import "utils/mixins";
+
+//base styles
+@import "base/common";
+@import "base/container";
+@import "base/button";
+
+//components
+@import "components/header";
+@import "components/hero";
+@import "components/collection";
+@import "components/creators";
+@import "components/categories";
+@import "components/discover";
+@import "components/magic";
+@import "components/works";
+@import "components/subscribe";
+@import "components/discover";
