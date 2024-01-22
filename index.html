@@ -3,7 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Work+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Space+Mono&family=Work+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <title>NFT Marketplace</title>
+    <!-- font-family: 'Space Mono', monospace;
+    font-family: 'Work Sans', sans-serif; -->
 </head>
 <body>
     <header class="header">
@@ -83,9 +88,10 @@
 
                 <div class="hero__left">
                     <picture>
-                        <source srcset="./image/hero/hero-planet@1x.webp 1x, ./image/hero/hero-planet@2x.webp 2x" width="768" height="287" media="(min-width: 768px)">
-                        <source srcset="./image/hero/hero-planet-mobile@1x.webp 1x, ./image/hero/hero-planet-mobile@2x.webp 2x" width="396" height="148"  media="(min-width: 320px)">
-                        <img class="hero__img-planet" src="" alt="Planet">
+                        <source srcset="./images/hero/hero-desktop@1x.jpg 1x, ./images/hero/hero-desktop@2x.jpg 2x" media="(min-width: 1440px)">
+                        <source srcset="./images/hero/hero-tablet@1x.jpg 1x, ./images/hero/hero-tablet@1x.jpg 2x" media="(min-width: 834px)">
+                        <source srcset="./images/hero/hero-mobile@1x.jpg 1x, ./images/hero/hero-mobile@1x.jpg 2x" media="(min-width: 375px)">
+                        <img class="hero__image" src="" alt="Space Walking">
                     </picture>
                     <p class="hero__left-title">Space Walking</p>
                     <div class="hero__left-wrapper">
@@ -104,37 +110,28 @@
                     <div class="collection__wrapper">
                         <ul class="list__wrapper">
                             <li class="collection__item">
-                                <img class="collection__img" src="" alt="">
+                                <picture>
+                                    <source srcset="./images/collection/1.1-desktop@1x.jpg 1x, ./images/collection/1.1-desktop@2x.jpg 2x" media="(min-width: 1440px)">
+                                    <source srcset="./images/collection/1.1-desktop@1x.jpg 1x, ./images/collection/1.1-desktop@2x.jpg 2x" media="(min-width: 834px)">
+                                    <source srcset="./images/collection/1.1-mobile@1x.jpg 1x, ./images/collection/1.1-mobile@2x.jpg.jpg 2x" media="(min-width: 375px)">
+                                    <img class="collection__image" src="" alt="Dog">
+                                </picture>
                             </li>
                             <li class="collection__item">
-                                <img class="collection__img" src="" alt="">
+                                <picture>
+                                    <source srcset="./images/collection/1.2-desktop@1x.jpg 1x, ./images/collection/1.2-desktop@2x.jpg 2x" media="(min-width: 1440px)">
+                                    <source srcset="./images/collection/1.2-desktop@1x.jpg 1x, ./images/collection/1.2-desktop@2x.jpg 2x" media="(min-width: 834px)">
+                                    <source srcset="./images/collection/1.2-mobile@1x.jpg 1x, ./images/collection/1.2-mobile@2x.jpg.jpg 2x" media="(min-width: 375px)">
+                                    <img class="collection__image" src="" alt="Cat">
+                                </picture>
                             </li>
                             <li class="collection__item">
-                                <img class="collection__img" src="" alt="">
-                            </li>
-                            <li class="collection__item">
-                                <p class="collection__item-text">1025+</p>
-                            </li>
-                        </ul>
-                        <div class="wrapper__name">
-                            <p class="collection__nomin">DSGN Animals</p>
-                            <div class="wrapper__avatar">
-                                <img class="collection__avatar" src="" alt="">
-                                <p class="collection__name">MrFox</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="collection__wrapper">
-                        <ul class="list__wrapper">
-                            <li class="collection__item">
-                                <img class="collection__img" src="" alt="">
-                            </li>
-                            <li class="collection__item">
-                                <img class="collection__img" src="" alt="">
-                            </li>
-                            <li class="collection__item">
-                                <img class="collection__img" src="" alt="">
+                                <picture>
+                                    <source srcset="./images/collection/1.3-desktop@1x.jpg 1x, ./images/collection/1.3-desktop@2x.jpg 2x" media="(min-width: 1440px)">
+                                    <source srcset="./images/collection/1.3-desktop@1x.jpg 1x, ./images/collection/1.3-desktop@2x.jpg 2x" media="(min-width: 834px)">
+                                    <source srcset="./images/collection/1.3-mobile@1x.jpg 1x, ./images/collection/1.3-mobile@2x.jpg.jpg 2x" media="(min-width: 375px)">
+                                    <img class="collection__image" src="" alt="Bear">
+                                </picture>
                             </li>
                             <li class="collection__item">
                                 <p class="collection__item-text">1025+</p>
@@ -152,13 +149,67 @@
                     <div class="collection__wrapper">
                         <ul class="list__wrapper">
                             <li class="collection__item">
-                                <img class="collection__img" src="" alt="">
+                                <picture>
+                                    <source srcset="./images/collection/2.1-desktop@1x.jpg 1x, ./images/collection/2.1-desktop@2x.jpg 2x" media="(min-width: 1440px)">
+                                    <source srcset="./images/collection/2.1-desktop@1x.jpg 1x, ./images/collection/2.1-desktop@2x.jpg 2x" media="(min-width: 834px)">
+                                    <source srcset="./images/collection/2.1-mobile@1x.jpg 1x, ./images/collection/2.1-mobile@2x.jpg.jpg 2x" media="(min-width: 375px)">
+                                    <img class="collection__image" src="" alt="Mushrooms">
+                                </picture>
                             </li>
                             <li class="collection__item">
-                                <img class="collection__img" src="" alt="">
+                                <picture>
+                                    <source srcset="./images/collection/2.2-desktop@1x.jpg 1x, ./images/collection/2.2-desktop@2x.jpg 2x" media="(min-width: 1440px)">
+                                    <source srcset="./images/collection/2.2-desktop@1x.jpg 1x, ./images/collection/2.2-desktop@2x.jpg 2x" media="(min-width: 834px)">
+                                    <source srcset="./images/collection/2.2-mobile@1x.jpg 1x, ./images/collection/2.2-mobile@2x.jpg.jpg 2x" media="(min-width: 375px)">
+                                    <img class="collection__image" src="" alt="Mushrooms">
+                                </picture>
                             </li>
                             <li class="collection__item">
-                                <img class="collection__img" src="" alt="">
+                                <picture>
+                                    <source srcset="./images/collection/2.3-desktop@1x.jpg 1x, ./images/collection/2.3-desktop@2x.jpg 2x" media="(min-width: 1440px)">
+                                    <source srcset="./images/collection/2.3-desktop@1x.jpg 1x, ./images/collection/2.3-desktop@2x.jpg 2x" media="(min-width: 834px)">
+                                    <source srcset="./images/collection/2.3-mobile@1x.jpg 1x, ./images/collection/2.3-mobile@2x.jpg.jpg 2x" media="(min-width: 375px)">
+                                    <img class="collection__image" src="" alt="Mushrooms">
+                                </picture>
+                            </li>
+                            <li class="collection__item">
+                                <p class="collection__item-text">1025+</p>
+                            </li>
+                        </ul>
+                        <div class="wrapper__name">
+                            <p class="collection__nomin">DSGN Animals</p>
+                            <div class="wrapper__avatar">
+                                <img class="collection__avatar" src="" alt="">
+                                <p class="collection__name">MrFox</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="collection__wrapper">
+                        <ul class="list__wrapper">
+                            <li class="collection__item">
+                                <picture>
+                                    <source srcset="./images/collection/3.1-desktop@1x.jpg 1x, ./images/collection/3.1-desktop@2x.jpg 2x" media="(min-width: 1440px)">
+                                    <source srcset="./images/collection/3.1-desktop@1x.jpg 1x, ./images/collection/3.1-desktop@2x.jpg 2x" media="(min-width: 834px)">
+                                    <source srcset="./images/collection/3.1-mobile@1x.jpg 1x, ./images/collection/3.1-mobile@2x.jpg 2x" media="(min-width: 375px)">
+                                    <img class="collection__image" src="" alt="Robot">
+                                </picture>
+                            </li>
+                            <li class="collection__item">
+                                <picture>
+                                    <source srcset="./images/collection/3.2-desktop@1x.jpg 1x, ./images/collection/3.2-desktop@2x.jpg 2x" media="(min-width: 1440px)">
+                                    <source srcset="./images/collection/3.2-desktop@1x.jpg 1x, ./images/collection/3.2-desktop@2x.jpg 2x" media="(min-width: 834px)">
+                                    <source srcset="./images/collection/3.2-mobile@1x.jpg 1x, ./images/collection/3.2-mobile@2x.jpg 2x" media="(min-width: 375px)">
+                                    <img class="collection__image" src="" alt="Robot">
+                                </picture>
+                            </li>
+                            <li class="collection__item">
+                                <picture>
+                                    <source srcset="./images/collection/3.2-desktop@1x.jpg 1x, ./images/collection/3.2-desktop@2x.jpg 2x" media="(min-width: 1440px)">
+                                    <source srcset="./images/collection/3.2-desktop@1x.jpg 1x, ./images/collection/3.2-desktop@2x.jpg 2x" media="(min-width: 834px)">
+                                    <source srcset="./images/collection/3.2-mobile@1x.jpg 1x, ./images/collection/3.2-mobile@2x.jpg 2x" media="(min-width: 375px)">
+                                    <img class="collection__image" src="" alt="Robot">
+                                </picture>
                             </li>
                             <li class="collection__item">
                                 <p class="collection__item-text">1025+</p>
@@ -248,7 +299,12 @@
                 <ul class="creators__list">
                     <li class="creators__item">
                         <p class="creators__num">1</p>
-                        <img class="creators__avatar" src="" alt="Keepitreal">
+                        <picture>
+                            <source srcset="./images/creators/desktop/1-desktop@1x.webp 1x, ./images/creators/desktop/1-desktop@2x.webp 2x" media="(min-width: 1440px)">
+                            <source srcset="./images/creators/other/1@1x.webp 1x, ./images/creators/other/1@2x.webp 2x" media="(min-width: 834px)">
+                            <source srcset="./images/creators/other/1@1x.webp 1x, ./images/creators/other/1@2x.webp 2x" media="(min-width: 375px)">
+                            <img class="creators__avatar" src="" alt="Keepitreal">
+                        </picture>
                         <p class="creators__name">Keepitreal</p>
                         <div class="wrapper__sales">
                             <p class="creators__sales">Total Sales:</p>
@@ -258,7 +314,12 @@
 
                     <li class="creators__item">
                         <p class="creators__num">2</p>
-                        <img class="creators__avatar" src="" alt="DigiLab">
+                        <picture>
+                            <source srcset="./images/creators/desktop/2-desktop@1x.webp 1x, ./images/creators/desktop/2-desktop@2x.webp 2x" media="(min-width: 1440px)">
+                            <source srcset="./images/creators/other/2@1x.webp 1x, ./images/creators/other/2@2x.webp 2x" media="(min-width: 834px)">
+                            <source srcset="./images/creators/other/2@1x.webp 1x, ./images/creators/other/2@2x.webp 2x" media="(min-width: 375px)">
+                            <img class="creators__avatar" src="" alt="DigiLab">
+                        </picture>
                         <p class="creators__name">DigiLab</p>
                         <div class="wrapper__sales">
                             <p class="creators__sales">Total Sales:</p>
@@ -268,7 +329,12 @@
 
                     <li class="creators__item">
                         <p class="creators__num">3</p>
-                        <img class="creators__avatar" src="" alt="GravityOne">
+                        <picture>
+                            <source srcset="./images/creators/desktop/3-desktop@1x.webp 1x, ./images/creators/desktop/3-desktop@2x.webp 2x" media="(min-width: 1440px)">
+                            <source srcset="./images/creators/other/3@1x.webp 1x, ./images/creators/other/3@2x.webp 2x" media="(min-width: 834px)">
+                            <source srcset="./images/creators/other/3@1x.webp 1x, ./images/creators/other/3@2x.webp 2x" media="(min-width: 375px)">
+                            <img class="creators__avatar" src="" alt="GravityOne">
+                        </picture>
                         <p class="creators__name">GravityOne</p>
                         <div class="wrapper__sales">
                             <p class="creators__sales">Total Sales:</p>
@@ -278,7 +344,12 @@
 
                     <li class="creators__item">
                         <p class="creators__num">4</p>
-                        <img class="creators__avatar" src="" alt="Juanie">
+                        <picture>
+                            <source srcset="./images/creators/desktop/4-desktop@1x.webp 1x, ./images/creators/desktop/4-desktop@2x.webp 2x" media="(min-width: 1440px)">
+                            <source srcset="./images/creators/other/4@1x.webp 1x, ./images/creators/other/4@2x.webp 2x" media="(min-width: 834px)">
+                            <source srcset="./images/creators/other/4@1x.webp 1x, ./images/creators/other/4@2x.webp 2x" media="(min-width: 375px)">
+                            <img class="creators__avatar" src="" alt="Juanie">
+                        </picture>
                         <p class="creators__name">Juanie</p>
                         <div class="wrapper__sales">
                             <p class="creators__sales">Total Sales:</p>
@@ -288,7 +359,12 @@
 
                     <li class="creators__item">
                         <p class="creators__num">5</p>
-                        <img class="creators__avatar" src="" alt="BlueWhale">
+                        <picture>
+                            <source srcset="./images/creators/desktop/5-desktop@1x.webp 1x, ./images/creators/desktop/5-desktop@2x.webp 2x" media="(min-width: 1440px)">
+                            <source srcset="./images/creators/other/5@1x.webp 1x, ./images/creators/other/5@2x.webp 2x" media="(min-width: 834px)">
+                            <source srcset="./images/creators/other/5@1x.webp 1x, ./images/creators/other/5@2x.webp 2x" media="(min-width: 375px)">
+                            <img class="creators__avatar" src="" alt="BlueWhale">
+                        </picture>
                         <p class="creators__name">BlueWhale</p>
                         <div class="wrapper__sales">
                             <p class="creators__sales">Total Sales:</p>
@@ -298,7 +374,12 @@
 
                     <li class="creators__item">
                         <p class="creators__num">6</p>
-                        <img class="creators__avatar" src="" alt="mr fox">
+                        <picture>
+                            <source srcset="./images/creators/desktop/6-desktop@1x.webp 1x, ./images/creators/desktop/6-desktop@2x.webp 2x" media="(min-width: 1440px)">
+                            <source srcset="./images/creators/other/6@1x.webp 1x, ./images/creators/other/6@2x.webp 2x" media="(min-width: 834px)">
+                            <source srcset="./images/creators/other/6@1x.webp 1x, ./images/creators/other/6@2x.webp 2x" media="(min-width: 375px)">
+                            <img class="creators__avatar" src="" alt="mr fox">
+                        </picture>
                         <p class="creators__name">mr fox</p>
                         <div class="wrapper__sales">
                             <p class="creators__sales">Total Sales:</p>
@@ -308,7 +389,12 @@
 
                     <li class="creators__item">
                         <p class="creators__num">7</p>
-                        <img class="creators__avatar" src="" alt="Shroomie">
+                        <picture>
+                            <source srcset="./images/creators/desktop/7-desktop@1x.webp 1x, ./images/creators/desktop/7-desktop@2x.webp 2x" media="(min-width: 1440px)">
+                            <source srcset="./images/creators/other/7@1x.webp 1x, ./images/creators/other/7@2x.webp 2x" media="(min-width: 834px)">
+                            <source srcset="./images/creators/other/7@1x.webp 1x, ./images/creators/other/7@2x.webp 2x" media="(min-width: 375px)">
+                            <img class="creators__avatar" src="" alt="Shroomie">
+                        </picture>
                         <p class="creators__name">Shroomie</p>
                         <div class="wrapper__sales">
                             <p class="creators__sales">Total Sales:</p>
@@ -318,7 +404,12 @@
 
                     <li class="creators__item">
                         <p class="creators__num">8</p>
-                        <img class="creators__avatar" src="" alt="robotica">
+                        <picture>
+                            <source srcset="./images/creators/desktop/8-desktop@1x.webp 1x, ./images/creators/desktop/8-desktop@2x.webp 2x" media="(min-width: 1440px)">
+                            <source srcset="./images/creators/other/8@1x.webp 1x, ./images/creators/other/8@2x.webp 2x" media="(min-width: 834px)">
+                            <source srcset="./images/creators/other/8@1x.webp 1x, ./images/creators/other/8@2x.webp 2x" media="(min-width: 375px)">
+                            <img class="creators__avatar" src="" alt="robotica">
+                        </picture>
                         <p class="creators__name">robotica</p>
                         <div class="wrapper__sales">
                             <p class="creators__sales">Total Sales:</p>
@@ -328,7 +419,12 @@
 
                     <li class="creators__item">
                         <p class="creators__num">9</p>
-                        <img class="creators__avatar" src="" alt="RustyRobot">
+                        <picture>
+                            <source srcset="./images/creators/desktop/9-desktop@1x.webp 1x, ./images/creators/desktop/9-desktop@2x.webp 2x" media="(min-width: 1440px)">
+                            <source srcset="./images/creators/other/9@1x.webp 1x, ./images/creators/other/9@2x.webp 2x" media="(min-width: 834px)">
+                            <source srcset="./images/creators/other/9@1x.webp 1x, ./images/creators/other/9@2x.webp 2x" media="(min-width: 375px)">
+                            <img class="creators__avatar" src="" alt="RustyRobot">
+                        </picture>
                         <p class="creators__name">RustyRobot</p>
                         <div class="wrapper__sales">
                             <p class="creators__sales">Total Sales:</p>
@@ -338,7 +434,12 @@
 
                     <li class="creators__item">
                         <p class="creators__num">10</p>
-                        <img class="creators__avatar" src="" alt="animakid">
+                        <picture>
+                            <source srcset="./images/creators/desktop/10-desktop@1x.webp 1x, ./images/creators/desktop/10-desktop@2x.webp 2x" media="(min-width: 1440px)">
+                            <source srcset="./images/creators/other/10@1x.webp 1x, ./images/creators/other/10@2x.webp 2x" media="(min-width: 834px)">
+                            <source srcset="./images/creators/other/10@1x.webp 1x, ./images/creators/other/10@2x.webp 2x" media="(min-width: 375px)">
+                            <img class="creators__avatar" src="" alt="animakid">
+                        </picture>
                         <p class="creators__name">animakid</p>
                         <div class="wrapper__sales">
                             <p class="creators__sales">Total Sales:</p>
@@ -348,7 +449,12 @@
 
                     <li class="creators__item">
                         <p class="creators__num">11</p>
-                        <img class="creators__avatar" src="" alt="Dotgu">
+                        <picture>
+                            <source srcset="./images/creators/desktop/11-desktop@1x.webp 1x, ./images/creators/desktop/11-desktop@2x.webp 2x" media="(min-width: 1440px)">
+                            <source srcset="./images/creators/other/11@1x.webp 1x, ./images/creators/other/11@2x.webp 2x" media="(min-width: 834px)">
+                            <source srcset="./images/creators/other/11@1x.webp 1x, ./images/creators/other/11@2x.webp 2x" media="(min-width: 375px)">
+                            <img class="creators__avatar" src="" alt="Dotgu">
+                        </picture>
                         <p class="creators__name">Dotgu</p>
                         <div class="wrapper__sales">
                             <p class="creators__sales">Total Sales:</p>
@@ -358,7 +464,12 @@
 
                     <li class="creators__item">
                         <p class="creators__num">12</p>
-                        <img class="creators__avatar" src="" alt="Ghiblier">
+                        <picture>
+                            <source srcset="./images/creators/desktop/12-desktop@1x.webp 1x, ./images/creators/desktop/12-desktop@2x.webp 2x" media="(min-width: 1440px)">
+                            <source srcset="./images/creators/other/12@1x.webp 1x, ./images/creators/other/12@2x.webp 2x" media="(min-width: 834px)">
+                            <source srcset="./images/creators/other/12@1x.webp 1x, ./images/creators/other/12@2x.webp 2x" media="(min-width: 375px)">
+                            <img class="creators__avatar" src="" alt="Ghiblier">
+                        </picture>
                         <p class="creators__name">Ghiblier</p>
                         <div class="wrapper__sales">
                             <p class="creators__sales">Total Sales:</p>
@@ -379,7 +490,12 @@
                             <path d="M43.9053 45.3906C51.4053 35.2734 70.4678 12.1094 87.8896 12.1094C87.8896 29.5312 64.7256 48.5938 54.6084 56.0938" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
                             <path d="M51.9531 35.3906C57.246 38.3777 61.6223 42.754 64.6094 48.0469" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
                           </svg>
-                        <img class="categories__img" src="" alt="">
+                          <picture>
+                            <source srcset="./images/categories/desktop/1-desktop@1x.jpg 1x, ./images/categories/desktop/1-desktop@2x.jpg 2x" media="(min-width: 1440px)">
+                            <source srcset="./images/categories/tablet/1-tablet@1x.jpg 1x, ./images/categories/tablet/1-tablet@2x.jpg 2x" media="(min-width: 834px)">
+                            <source srcset="./images/categories/mobile/1-mobile@1x.jpg 1x, ./images/categories/mobile/1-mobile@2x.jpg 2x" media="(min-width: 375px)">
+                            <img class="categories__img" src="" alt="categ-1">
+                        </picture>
                         <p class="categories__text">Art</p>
                     </li>
 
@@ -390,7 +506,12 @@
                             <path d="M85.9375 63.4766V81.25C85.9375 82.0788 85.6083 82.8737 85.0222 83.4597C84.4362 84.0458 83.6413 84.375 82.8125 84.375H28.125" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
                             <path d="M28.125 75C30.7138 75 32.8125 72.9013 32.8125 70.3125C32.8125 67.7237 30.7138 65.625 28.125 65.625C25.5362 65.625 23.4375 67.7237 23.4375 70.3125C23.4375 72.9013 25.5362 75 28.125 75Z" fill="white"/>
                           </svg>
-                        <img class="categories__img" src="" alt="">
+                          <picture>
+                            <source srcset="./images/categories/desktop/2-desktop@1x.jpg 1x, ./images/categories/desktop/2-desktop@2x.jpg 2x" media="(min-width: 1440px)">
+                            <source srcset="./images/categories/tablet/2-tablet@1x.jpg 1x, ./images/categories/tablet/2-tablet@2x.jpg 2x" media="(min-width: 834px)">
+                            <source srcset="./images/categories/mobile/2-mobile@1x.jpg 1x, ./images/categories/mobile/2-mobile@2x.jpg 2x" media="(min-width: 375px)">
+                            <img class="categories__img" src="" alt="categ-2">
+                        </picture>
                         <p class="categories__text">Collectibles</p>
                     </li>
 
@@ -401,7 +522,12 @@
                             <path d="M81.25 31.25L31.25 43.75" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
                             <path d="M31.25 79.6875V25L81.25 12.5V67.1875" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
-                        <img class="categories__img" src="" alt="">
+                        <picture>
+                            <source srcset="./images/categories/desktop/3-desktop@1x.jpg 1x, ./images/categories/desktop/3-desktop@2x.jpg 2x" media="(min-width: 1440px)">
+                            <source srcset="./images/categories/tablet/3-tablet@1x.jpg 1x, ./images/categories/tablet/3-tablet@2x.jpg 2x" media="(min-width: 834px)">
+                            <source srcset="./images/categories/mobile/3-mobile@1x.jpg 1x, ./images/categories/mobile/3-mobile@2x.jpg 2x" media="(min-width: 375px)">
+                            <img class="categories__img" src="" alt="categ-3">
+                        </picture>
                         <p class="categories__text">Music</p>
                     </li>
 
@@ -410,7 +536,12 @@
                             <path d="M81.25 81.25H18.75C17.0924 81.25 15.5027 80.5915 14.3306 79.4194C13.1585 78.2473 12.5 76.6576 12.5 75V31.25C12.5 29.5924 13.1585 28.0027 14.3306 26.8306C15.5027 25.6585 17.0924 25 18.75 25H31.25L37.5 15.625H62.5L68.75 25H81.25C82.9076 25 84.4973 25.6585 85.6694 26.8306C86.8415 28.0027 87.5 29.5924 87.5 31.25V75C87.5 76.6576 86.8415 78.2473 85.6694 79.4194C84.4973 80.5915 82.9076 81.25 81.25 81.25Z" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
                             <path d="M50 65.625C57.7665 65.625 64.0625 59.329 64.0625 51.5625C64.0625 43.796 57.7665 37.5 50 37.5C42.2335 37.5 35.9375 43.796 35.9375 51.5625C35.9375 59.329 42.2335 65.625 50 65.625Z" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
-                        <img class="categories__img" src="" alt="">
+                        <picture>
+                            <source srcset="./images/categories/desktop/4-desktop@1x.jpg 1x, ./images/categories/desktop/4-desktop@2x.jpg 2x" media="(min-width: 1440px)">
+                            <source srcset="./images/categories/tablet/4-tablet@1x.jpg 1x, ./images/categories/tablet/4-tablet@2x.jpg 2x" media="(min-width: 834px)">
+                            <source srcset="./images/categories/mobile/4-mobile@1x.jpg 1x, ./images/categories/mobile/4-mobile@2x.jpg 2x" media="(min-width: 375px)">
+                            <img class="categories__img" src="" alt="categ-4">
+                        </picture>
                         <p class="categories__text">Photography</p>
                     </li>
 
@@ -419,7 +550,12 @@
                             <path d="M9.375 23.4375H59.375C62.6902 23.4375 65.8696 24.7545 68.2138 27.0987C70.558 29.4429 71.875 32.6223 71.875 35.9375V73.4375C71.875 74.2663 71.5458 75.0612 70.9597 75.6472C70.3737 76.2333 69.5788 76.5625 68.75 76.5625H18.75C15.4348 76.5625 12.2554 75.2455 9.91117 72.9013C7.56696 70.5571 6.25 67.3777 6.25 64.0625V26.5625C6.25 25.7337 6.57924 24.9388 7.16529 24.3528C7.75134 23.7667 8.5462 23.4375 9.375 23.4375V23.4375Z" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
                             <path d="M71.875 43.75L93.75 31.25V68.75L71.875 56.25" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
-                        <img class="categories__img" src="" alt="">
+                        <picture>
+                            <source srcset="./images/categories/desktop/5-desktop@1x.jpg 1x, ./images/categories/desktop/5-desktop@2x.jpg 2x" media="(min-width: 1440px)">
+                            <source srcset="./images/categories/tablet/5-tablet@1x.jpg 1x, ./images/categories/tablet/5-tablet@2x.jpg 2x" media="(min-width: 834px)">
+                            <source srcset="./images/categories/mobile/5-mobile@1x.jpg 1x, ./images/categories/mobile/5-mobile@2x.jpg 2x" media="(min-width: 375px)">
+                            <img class="categories__img" src="" alt="categ-5">
+                        </picture>
                         <p class="categories__text">Video</p>
                     </li>
 
@@ -434,7 +570,12 @@
                             <path d="M72.8218 14.6987L14.7341 72.7864C13.5137 74.0068 13.5137 75.9854 14.7341 77.2058L22.8134 85.285C24.0338 86.5054 26.0124 86.5054 27.2328 85.285L85.3205 27.1973C86.5409 25.9769 86.5409 23.9983 85.3205 22.7779L77.2413 14.6987C76.0209 13.4783 74.0422 13.4783 72.8218 14.6987Z" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
                             <path d="M56.25 31.25L68.75 43.75" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
-                        <img class="categories__img" src="" alt="">
+                        <picture>
+                            <source srcset="./images/categories/desktop/6-desktop@1x.jpg 1x, ./images/categories/desktop/6-desktop@2x.jpg 2x" media="(min-width: 1440px)">
+                            <source srcset="./images/categories/tablet/6-tablet@1x.jpg 1x, ./images/categories/tablet/6-tablet@2x.jpg 2x" media="(min-width: 834px)">
+                            <source srcset="./images/categories/mobile/6-mobile@1x.jpg 1x, ./images/categories/mobile/6-mobile@2x.jpg 2x" media="(min-width: 375px)">
+                            <img class="categories__img" src="" alt="categ-6">
+                        </picture>
                         <p class="categories__text">Utility</p>
                     </li>
 
@@ -446,7 +587,12 @@
                             <path d="M12.5 50H87.5" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
                             <path d="M50 12.5V87.5" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
-                        <img class="categories__img" src="" alt="">
+                        <picture>
+                            <source srcset="./images/categories/desktop/7-desktop@1x.jpg 1x, ./images/categories/desktop/7-desktop@2x.jpg 2x" media="(min-width: 1440px)">
+                            <source srcset="./images/categories/tablet/7-tablet@1x.jpg 1x, ./images/categories/tablet/7-tablet@2x.jpg 2x" media="(min-width: 834px)">
+                            <source srcset="./images/categories/mobile/7-mobile@1x.jpg 1x, ./images/categories/mobile/7-mobile@2x.jpg 2x" media="(min-width: 375px)">
+                            <img class="categories__img" src="" alt="categ-7">
+                        </picture>
                         <p class="categories__text">Sport</p>
                     </li>
 
@@ -455,92 +601,146 @@
                             <path d="M50 84.375C68.9848 84.375 84.375 68.9848 84.375 50C84.375 31.0152 68.9848 15.625 50 15.625C31.0152 15.625 15.625 31.0152 15.625 50C15.625 68.9848 31.0152 84.375 50 84.375Z" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
                             <path d="M71.9529 23.5547C82.7732 20.586 90.8982 20.8594 93.3201 25C97.617 32.461 81.7186 49.7266 57.8123 63.5157C33.9061 77.3047 11.0154 82.461 6.6795 75C4.29669 70.8594 8.12481 63.6719 16.0936 55.7813" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
-                        <img class="categories__img" src="" alt="">
+                        <picture>
+                            <source srcset="./images/categories/desktop/8-desktop@1x.jpg 1x, ./images/categories/desktop/8-desktop@2x.jpg 2x" media="(min-width: 1440px)">
+                            <source srcset="./images/categories/tablet/8-tablet@1x.jpg 1x, ./images/categories/tablet/8-tablet@2x.jpg 2x" media="(min-width: 834px)">
+                            <source srcset="./images/categories/mobile/8-mobile@1x.jpg 1x, ./images/categories/mobile/8-mobile@2x.jpg 2x" media="(min-width: 375px)">
+                            <img class="categories__img" src="" alt="categ-8">
+                        </picture>
                         <p class="categories__text">Virtual Worlds</p>
                     </li>
                 </ul>
             </div>
         </section>
 
-        <section class="more">
-            <div class="more__container container">
-                <div class="more__wrapper">
-                    <div class="more__wrapper-name">
-                        <h2 class="more__title">Discover More NFTs</h2>
-                        <p class="more__subtitle">Explore new trending NFTs</p>
+        <section class="discover">
+            <div class="discover__container container">
+                <div class="discovere__wrapper">
+                    <div class="discover__wrapper-name">
+                        <h2 class="discover__title">Discover More NFTs</h2>
+                        <p class="discover__subtitle">Explore new trending NFTs</p>
                     </div>
-                    <button class="more__button">
+                    <button class="discover__button">
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
                             <path fill-rule="evenodd" clip-rule="evenodd" d="M2.83931 6.74556C4.3292 5.25567 6.66714 3.75 10 3.75C13.3329 3.75 15.6708 5.25567 17.1607 6.74556C17.9038 7.4887 18.4397 8.23076 18.7906 8.78809C18.9664 9.06724 19.0966 9.30146 19.184 9.4683C19.2277 9.55176 19.2608 9.61849 19.2835 9.66569C19.2949 9.6893 19.3037 9.70804 19.3099 9.72157L19.3174 9.7379L19.3197 9.74306L19.3206 9.74487L19.3209 9.74558C19.321 9.74588 19.3211 9.74616 18.75 10C19.3211 10.2538 19.321 10.2541 19.3209 10.2544L19.3206 10.2551L19.3197 10.2569L19.3174 10.2621L19.3099 10.2784C19.3037 10.292 19.2949 10.3107 19.2835 10.3343C19.2608 10.3815 19.2277 10.4482 19.184 10.5317C19.0966 10.6985 18.9664 10.9328 18.7906 11.2119C18.4397 11.7692 17.9038 12.5113 17.1607 13.2544C15.6708 14.7443 13.3329 16.25 10 16.25C6.66714 16.25 4.3292 14.7443 2.83931 13.2544C2.09617 12.5113 1.5603 11.7692 1.20939 11.2119C1.03362 10.9328 0.903373 10.6985 0.815984 10.5317C0.772267 10.4482 0.739205 10.3815 0.716476 10.3343C0.705109 10.3107 0.696319 10.292 0.690066 10.2784L0.682582 10.2621L0.680256 10.2569L0.679445 10.2551L0.679127 10.2544C0.678993 10.2541 0.678868 10.2538 1.25 10C0.678868 9.74616 0.678993 9.74588 0.679127 9.74558L0.679445 9.74487L0.680256 9.74306L0.682582 9.7379L0.690066 9.72157C0.696319 9.70804 0.705109 9.6893 0.716476 9.66569C0.739205 9.61849 0.772267 9.55176 0.815984 9.4683C0.903373 9.30146 1.03362 9.06724 1.20939 8.78809C1.5603 8.23076 2.09617 7.4887 2.83931 6.74556ZM1.25 10L0.678868 9.74616C0.607044 9.90777 0.607044 10.0922 0.678868 10.2538L1.25 10ZM1.94882 10C2.02235 10.1377 2.12794 10.3248 2.26718 10.5459C2.58033 11.0433 3.06008 11.7074 3.72319 12.3706C5.0458 13.6932 7.08286 15 10 15C12.9171 15 14.9542 13.6932 16.2768 12.3706C16.9399 11.7074 17.4197 11.0433 17.7328 10.5459C17.8721 10.3248 17.9777 10.1377 18.0512 10C17.9777 9.86227 17.8721 9.67524 17.7328 9.4541C17.4197 8.95674 16.9399 8.29255 16.2768 7.62944C14.9542 6.30683 12.9171 5 10 5C7.08286 5 5.0458 6.30683 3.72319 7.62944C3.06008 8.29255 2.58033 8.95674 2.26718 9.4541C2.12794 9.67524 2.02235 9.86227 1.94882 10ZM18.75 10L19.3211 10.2538C19.393 10.0922 19.393 9.90777 19.3211 9.74616L18.75 10Z" fill="#A259FF"/>
                             <path fill-rule="evenodd" clip-rule="evenodd" d="M10 7.5C8.61929 7.5 7.5 8.61929 7.5 10C7.5 11.3807 8.61929 12.5 10 12.5C11.3807 12.5 12.5 11.3807 12.5 10C12.5 8.61929 11.3807 7.5 10 7.5ZM6.25 10C6.25 7.92893 7.92893 6.25 10 6.25C12.0711 6.25 13.75 7.92893 13.75 10C13.75 12.0711 12.0711 13.75 10 13.75C7.92893 13.75 6.25 12.0711 6.25 10Z" fill="#A259FF"/>
                         </svg>
-                        <p class="more__button-text">See All</p>
+                        <p class="discover__button-text">See All</p>
                     </button>
                 </div>
             </div>
 
-            <ul class="more__list">
-                <li class="more__item">
-                    <img class="more__img" src="" alt="">
-                    <div class="more__wrapper">
-                        <p class="more__name-img">Distant Galaxy</p>
-                        <div class="more__wrapper-avatar">
-                            <img class="more__avatar" src="" alt="">
-                            <p class="more__name">MoonDancer</p>
+            <ul class="discover__list">
+                <li class="discover__item">
+                    <img class="discover__img" src="" alt="">
+                    <div class="discover__wrapper">
+                        <p class="discover__name-img">Distant Galaxy</p>
+                        <div class="discover__wrapper-avatar">
+                            <picture>
+                                <source srcset="./images/discover/1-desktop@1x.jpg 1x, ./images/discover/1-desktop@2x.jpg 2x" media="(min-width: 1440px)">
+                                <source srcset="./images/discover/1-mobile@1x.jpg 1x, ./images/discover/1-mobile@2x.jpg 2x" media="(min-width: 834px)">
+                                <source srcset="./images/discover/1-mobile@1x.jpg 1x, ./images/discover/1-mobile@2x.jpg 2x" media="(min-width: 375px)">
+                                <img class="discover__img" src="" alt="MoonDancer">
+                            </picture>
+                            <p class="discover__name">MoonDancer</p>
                         </div>
                         <div class="price__wrapper">
-                            <p class="more__price">Price</p>
-                            <p class="more__eth">1.63 ETH</p>
+                            <p class="discover__price">Price</p>
+                            <p class="discover__eth">1.63 ETH</p>
                         </div>
                         <div class="bid__wrapper">
-                            <p class="more__bid">Highest Bid</p>
-                            <p class="more__weth">0.33 wETH</p>
+                            <p class="discover__bid">Highest Bid</p>
+                            <p class="discover__weth">0.33 wETH</p>
                         </div>
                     </div>
                 </li>
 
-                <li class="more__item">
-                    <img class="more__img" src="" alt="">
-                    <div class="more__wrapper">
-                        <p class="more__name-img">Distant Galaxy</p>
-                        <div class="more__wrapper-avatar">
-                            <img class="more__avatar" src="" alt="">
-                            <p class="more__name">MoonDancer</p>
+                <li class="discover__item">
+                    <picture>
+                        <source srcset="./images/discover/2-desktop@1x.jpg 1x, ./images/discover/2-desktop@2x.jpg 2x" media="(min-width: 1440px)">
+                        <source srcset="./images/discover/2-mobile@1x.jpg 1x, ./images/discover/2-mobile@2x.jpg 2x" media="(min-width: 834px)">
+                        <source srcset="./images/discover/2-mobile@1x.jpg 1x, ./images/discover/2-mobile@2x.jpg 2x" media="(min-width: 375px)">
+                        <img class="discover__img" src="" alt="Distant Galaxy">
+                    </picture>
+                    <div class="discover__wrapper">
+                        <p class="discover__name-img">Distant Galaxy</p>
+                        <div class="discover__wrapper-avatar">
+                            <img class="discover__avatar" src="" alt="">
+                            <p class="discover__name">MoonDancer</p>
                         </div>
                         <div class="price__wrapper">
-                            <p class="more__price">Price</p>
-                            <p class="more__eth">1.63 ETH</p>
+                            <p class="discover__price">Price</p>
+                            <p class="discover__eth">1.63 ETH</p>
                         </div>
                         <div class="bid__wrapper">
-                            <p class="more__bid">Highest Bid</p>
-                            <p class="more__weth">0.33 wETH</p>
+                            <p class="discover__bid">Highest Bid</p>
+                            <p class="discover__weth">0.33 wETH</p>
                         </div>
                     </div>
                 </li>
 
-                <li class="more__item">
-                    <img class="more__img" src="" alt="">
-                    <div class="more__wrapper">
-                        <p class="more__name-img">Distant Galaxy</p>
-                        <div class="more__wrapper-avatar">
-                            <img class="more__avatar" src="" alt="">
-                            <p class="more__name">MoonDancer</p>
+                <li class="discover__item">
+                    <picture>
+                        <source srcset="./images/discover/3-desktop@1x.jpg 1x, ./images/discover/3-desktop@2x.jpg 2x" media="(min-width: 1440px)">
+                        <source srcset="./images/discover/3-mobile@1x.jpg 1x, ./images/discover/3-mobile@2x.jpg 2x" media="(min-width: 834px)">
+                        <source srcset="./images/discover/3-mobile@1x.jpg 1x, ./images/discover/3-mobile@2x.jpg 2x" media="(min-width: 375px)">
+                        <img class="discover__img" src="" alt="Distant Galaxy">
+                    </picture>
+                    <div class="discover__wrapper">
+                        <p class="discover__name-img">Distant Galaxy</p>
+                        <div class="discover__wrapper-avatar">
+                            <img class="discover__avatar" src="" alt="">
+                            <p class="discover__name">MoonDancer</p>
                         </div>
                         <div class="price__wrapper">
-                            <p class="more__price">Price</p>
-                            <p class="more__eth">1.63 ETH</p>
+                            <p class="discover__price">Price</p>
+                            <p class="discover__eth">1.63 ETH</p>
                         </div>
                         <div class="bid__wrapper">
-                            <p class="more__bid">Highest Bid</p>
-                            <p class="more__weth">0.33 wETH</p>
+                            <p class="discover__bid">Highest Bid</p>
+                            <p class="discover__weth">0.33 wETH</p>
                         </div>
                     </div>
                 </li>
             </ul>
         </section>
 
-        <section class="image">
-            <img src="" alt="">
+        <section class="magic">
+            <picture>
+                <source srcset="./images/magic/magic-desktop@1x.jpg 1x, ./images/magic/magic-desktop@2x.jpg 2x" media="(min-width: 1440px)">
+                <source srcset="./images/magic/magic-tablet@1x.jpg 1x, ./images/magic/magic-tablet@1x.jpg 2x" media="(min-width: 834px)">
+                <source srcset="./images/magic/magic-mobile@1x.jpg 1x, ./images/magic/magic-mobile@1x.jpg 2x" media="(min-width: 375px)">
+                <img class="discover__img" src="" alt="Mashrooms">
+            </picture>
+            <div class="magic__left">
+                <div class="magic__wrapper-name">
+                    <img class="magic__img" src="" alt="avatar">
+                    <p class="magic__name">Shroomie</p>
+                </div>
+                <h2 class="magic__title">Magic Mashrooms</h2>
+                <button class="magic__button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M2.83931 6.74556C4.3292 5.25567 6.66714 3.75 10 3.75C13.3329 3.75 15.6708 5.25567 17.1607 6.74556C17.9038 7.4887 18.4397 8.23076 18.7906 8.78809C18.9664 9.06724 19.0966 9.30146 19.184 9.4683C19.2277 9.55176 19.2608 9.61849 19.2835 9.66569C19.2949 9.6893 19.3037 9.70804 19.3099 9.72157L19.3174 9.7379L19.3197 9.74306L19.3206 9.74487L19.3209 9.74558C19.321 9.74588 19.3211 9.74616 18.75 10C19.3211 10.2538 19.321 10.2541 19.3209 10.2544L19.3206 10.2551L19.3197 10.2569L19.3174 10.2621L19.3099 10.2784C19.3037 10.292 19.2949 10.3107 19.2835 10.3343C19.2608 10.3815 19.2277 10.4482 19.184 10.5317C19.0966 10.6985 18.9664 10.9328 18.7906 11.2119C18.4397 11.7692 17.9038 12.5113 17.1607 13.2544C15.6708 14.7443 13.3329 16.25 10 16.25C6.66714 16.25 4.3292 14.7443 2.83931 13.2544C2.09617 12.5113 1.5603 11.7692 1.20939 11.2119C1.03362 10.9328 0.903373 10.6985 0.815984 10.5317C0.772267 10.4482 0.739205 10.3815 0.716476 10.3343C0.705109 10.3107 0.696319 10.292 0.690066 10.2784L0.682582 10.2621L0.680256 10.2569L0.679445 10.2551L0.679127 10.2544C0.678993 10.2541 0.678868 10.2538 1.25 10C0.678868 9.74616 0.678993 9.74588 0.679127 9.74558L0.679445 9.74487L0.680256 9.74306L0.682582 9.7379L0.690066 9.72157C0.696319 9.70804 0.705109 9.6893 0.716476 9.66569C0.739205 9.61849 0.772267 9.55176 0.815984 9.4683C0.903373 9.30146 1.03362 9.06724 1.20939 8.78809C1.5603 8.23076 2.09617 7.4887 2.83931 6.74556ZM1.25 10L0.678868 9.74616C0.607044 9.90777 0.607044 10.0922 0.678868 10.2538L1.25 10ZM1.94882 10C2.02235 10.1377 2.12794 10.3248 2.26718 10.5459C2.58033 11.0433 3.06008 11.7074 3.72319 12.3706C5.0458 13.6932 7.08286 15 10 15C12.9171 15 14.9542 13.6932 16.2768 12.3706C16.9399 11.7074 17.4197 11.0433 17.7328 10.5459C17.8721 10.3248 17.9777 10.1377 18.0512 10C17.9777 9.86227 17.8721 9.67524 17.7328 9.4541C17.4197 8.95674 16.9399 8.29255 16.2768 7.62944C14.9542 6.30683 12.9171 5 10 5C7.08286 5 5.0458 6.30683 3.72319 7.62944C3.06008 8.29255 2.58033 8.95674 2.26718 9.4541C2.12794 9.67524 2.02235 9.86227 1.94882 10ZM18.75 10L19.3211 10.2538C19.393 10.0922 19.393 9.90777 19.3211 9.74616L18.75 10Z" fill="#A259FF"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M10 7.5C8.61929 7.5 7.5 8.61929 7.5 10C7.5 11.3807 8.61929 12.5 10 12.5C11.3807 12.5 12.5 11.3807 12.5 10C12.5 8.61929 11.3807 7.5 10 7.5ZM6.25 10C6.25 7.92893 7.92893 6.25 10 6.25C12.0711 6.25 13.75 7.92893 13.75 10C13.75 12.0711 12.0711 13.75 10 13.75C7.92893 13.75 6.25 12.0711 6.25 10Z" fill="#A259FF"/>
+                    </svg>
+                    <p class="magic__button-text">See NFT</p>
+                </button>
+            </div>
+            <div class="magic__right">
+                <p class="magic__right-title">Auction ends in:</p>
+                <div class="magic__wrapper-hours">
+                    <p class="magic__hours-num">59</p>
+                    <p class="magic__hours-text">Hours</p>
+                </div>
+                <div class="magic__wrapper-minutes">
+                    <p class="magic__minutes-num">59</p>
+                    <p class="magic__minutes-text">Minutes</p>
+                </div>
+                <div class="magic__wrapper-seconds">
+                    <p class="magic__seconds-num">59</p>
+                    <p class="magic__seconds-text">Seconds</p>
+                </div>
+            </div>
         </section>
 
         <section class="works">
@@ -549,17 +749,32 @@
                 <p class="works__subtitle">Find out how to get started</p>
                 <ul class="works__list">
                     <li class="works__item">
-                        <img class="works__img" src="" alt="">
+                        <picture>
+                            <source srcset="./images/works/desktop/1-desktop@1x.webp 1x, ./images/works/desktop/1-desktop@2x.webp 2x" media="(min-width: 1440px)">
+                            <source srcset="./images/works/tablet/1-tablet@1x.webp 1x, ./images/works/tablet/1-tablet@2x.webp 2x" media="(min-width: 834px)">
+                            <source srcset="./images/works/mobile/1-mobile@1x.webp 1x,./images/works/mobile/1-mobile@2x.webp 2x" media="(min-width: 375px)">
+                            <img class="discover__img" src="" alt="wallet">
+                        </picture>
                         <p class="works__item-title">Setup Your wallet</p>
                         <p class="works__item-subtitle">Set up your wallet of choice. Connect it to the Animarket by clicking the wallet icon in the top right corner.</p>
                     </li>
                     <li class="works__item">
-                        <img class="works__img" src="" alt="">
+                        <picture>
+                            <source srcset="./images/works/desktop/2-desktop@1x.webp 1x, ./images/works/desktop/2-desktop@2x.webp 2x" media="(min-width: 1440px)">
+                            <source srcset="./images/works/tablet/2-tablet@1x.webp 1x, ./images/works/tablet/2-tablet@2x.webp 2x" media="(min-width: 834px)">
+                            <source srcset="./images/works/mobile/2-mobile@1x.webp 1x,./images/works/mobile/2-mobile@2x.webp 2x" media="(min-width: 375px)">
+                            <img class="discover__img" src="" alt="Collection">
+                        </picture>
                         <p class="works__item-title">Create Collection</p>
                         <p class="works__item-subtitle">Upload your work and setup your collection. Add a description, social links and floor price.</p>
                     </li>
                     <li class="works__item">
-                        <img class="works__img" src="" alt="">
+                        <picture>
+                            <source srcset="./images/works/desktop/3-desktop@1x.webp 1x, ./images/works/desktop/3-desktop@2x.webp 2x" media="(min-width: 1440px)">
+                            <source srcset="./images/works/tablet/3-tablet@1x.webp 1x, ./images/works/tablet/3-tablet@2x.webp 2x" media="(min-width: 834px)">
+                            <source srcset="./images/works/mobile/3-mobile@1x.webp 1x,./images/works/mobile/3-mobile@2x.webp 2x" media="(min-width: 375px)">
+                            <img class="discover__img" src="" alt="Start Earning">
+                        </picture>
                         <p class="works__item-title">Start Earning</p>
                         <p class="works__item-subtitle">Choose between auctions and fixed-price listings. Start earning by selling your NFTs or trading others.</p>
                     </li>
@@ -569,7 +784,12 @@
 
         <section class="subscribe">
             <div class="subscribe__container container">
-                <img class="subscribe__img" src="" alt="">
+                <picture>
+                    <source srcset="./images/subscribe/subscribe-desktop@1x.jpg 1x, ./images/subscribe/subscribe-desktop@1x.jpg 2x" media="(min-width: 1440px)">
+                    <source srcset="./images/subscribe/subscribe-tablet@1x.jpg 1x, ./images/subscribe/subscribe-tablet@1x.jpg 2x" media="(min-width: 834px)">
+                    <source srcset="./images/subscribe/subscribe-mobile@1x.jpg 1x, ./images/subscribe/subscribe-mobile@1x.jpg 2x" media="(min-width: 375px)">
+                    <img class="discover__img" src="" alt="Astronaut">
+                </picture>
                 <div class="subscribe__left">
                     <h2 class="subscribe__title">Join our weekly digest</h2>
                     <p class="subscribe__subtitle">Get exclusive promotions & updates straight to your inbox.</p>
