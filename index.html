@@ -39,20 +39,27 @@
                     <path d="M191.406 11.4456C191.421 11.7683 191.494 12.0689 191.626 12.3476C191.773 12.6116 191.963 12.8463 192.198 13.0516C192.447 13.2423 192.726 13.3963 193.034 13.5136C193.357 13.6163 193.694 13.6676 194.046 13.6676C194.735 13.6676 195.263 13.5503 195.63 13.3156C195.997 13.0663 196.261 12.7729 196.422 12.4356L198.798 13.7556C198.666 14.0343 198.483 14.3276 198.248 14.6356C198.013 14.9289 197.705 15.2003 197.324 15.4496C196.957 15.6989 196.503 15.9043 195.96 16.0656C195.432 16.2269 194.809 16.3076 194.09 16.3076C193.269 16.3076 192.521 16.1756 191.846 15.9116C191.171 15.6476 190.585 15.2663 190.086 14.7676C189.602 14.2689 189.221 13.6603 188.942 12.9416C188.678 12.2229 188.546 11.4089 188.546 10.4996V10.3676C188.546 9.53161 188.685 8.76894 188.964 8.07961C189.257 7.39028 189.653 6.80361 190.152 6.31961C190.651 5.83561 191.23 5.46161 191.89 5.19761C192.565 4.91894 193.283 4.77961 194.046 4.77961C194.985 4.77961 195.791 4.94828 196.466 5.28561C197.141 5.60828 197.698 6.02628 198.138 6.53961C198.578 7.03828 198.901 7.59561 199.106 8.21161C199.311 8.81294 199.414 9.39961 199.414 9.97161V11.4456H191.406ZM194.024 7.28761C193.32 7.28761 192.748 7.47094 192.308 7.83761C191.868 8.18961 191.582 8.60028 191.45 9.06961H196.598C196.51 8.55628 196.231 8.13094 195.762 7.79361C195.307 7.45628 194.728 7.28761 194.024 7.28761Z" fill="white"/>
                 </svg>
             </div>
-
-            <ul class="header__list">
-                <li class="header__item"><a class="header__link" href="">Marketplace</a></li>
-                <li class="header__item"><a class="header__link" href="">Rankings</a></li>
-                <li class="header__item"><a class="header__link" href="">Connect a wallet</a></li>
-            </ul>
-
-            <button class="header__button btn btn-purple">
-                <svg class="button__svg" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M10 3.125C7.58375 3.125 5.625 5.08375 5.625 7.5C5.625 9.91625 7.58375 11.875 10 11.875C12.4162 11.875 14.375 9.91625 14.375 7.5C14.375 5.08375 12.4162 3.125 10 3.125ZM4.375 7.5C4.375 4.3934 6.8934 1.875 10 1.875C13.1066 1.875 15.625 4.3934 15.625 7.5C15.625 10.6066 13.1066 13.125 10 13.125C6.8934 13.125 4.375 10.6066 4.375 7.5Z" fill="white"/>
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M10.0001 13.124C8.57374 13.124 7.17251 13.4995 5.93728 14.2128C4.70205 14.926 3.67634 15.9518 2.96327 17.1872C2.79071 17.4861 2.40848 17.5886 2.10953 17.416C1.81058 17.2435 1.70812 16.8612 1.88068 16.5623C2.70345 15.1369 3.88696 13.9532 5.31223 13.1303C6.7375 12.3073 8.3543 11.874 10.0001 11.874C11.6459 11.874 13.2627 12.3073 14.688 13.1303C16.1132 13.9532 17.2968 15.1369 18.1195 16.5623C18.2921 16.8612 18.1896 17.2435 17.8907 17.416C17.5917 17.5886 17.2095 17.4861 17.0369 17.1872C16.3239 15.9518 15.2982 14.926 14.0629 14.2128C12.8277 13.4995 11.4265 13.124 10.0001 13.124Z" fill="white"/>
-                  </svg>
-                <p class="button__sign">Sign Up</p>
-            </button>
+            <div class="header__burger">
+                <span></span>
+            </div>
+            <div class="header__right">
+                <nav class="nav">
+                    <ul class="header__list">
+                        <li class="header__item"><a class="header__link" href="">Marketplace</a></li>
+                        <li class="header__item"><a class="header__link" href="">Rankings</a></li>
+                        <li class="header__item"><a class="header__link" href="">Connect a wallet</a></li>
+                    </ul>
+                </nav>
+               
+    
+                <button class="header__button btn btn-purple">
+                    <svg class="button__svg" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M10 3.125C7.58375 3.125 5.625 5.08375 5.625 7.5C5.625 9.91625 7.58375 11.875 10 11.875C12.4162 11.875 14.375 9.91625 14.375 7.5C14.375 5.08375 12.4162 3.125 10 3.125ZM4.375 7.5C4.375 4.3934 6.8934 1.875 10 1.875C13.1066 1.875 15.625 4.3934 15.625 7.5C15.625 10.6066 13.1066 13.125 10 13.125C6.8934 13.125 4.375 10.6066 4.375 7.5Z" fill="white"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M10.0001 13.124C8.57374 13.124 7.17251 13.4995 5.93728 14.2128C4.70205 14.926 3.67634 15.9518 2.96327 17.1872C2.79071 17.4861 2.40848 17.5886 2.10953 17.416C1.81058 17.2435 1.70812 16.8612 1.88068 16.5623C2.70345 15.1369 3.88696 13.9532 5.31223 13.1303C6.7375 12.3073 8.3543 11.874 10.0001 11.874C11.6459 11.874 13.2627 12.3073 14.688 13.1303C16.1132 13.9532 17.2968 15.1369 18.1195 16.5623C18.2921 16.8612 18.1896 17.2435 17.8907 17.416C17.5917 17.5886 17.2095 17.4861 17.0369 17.1872C16.3239 15.9518 15.2982 14.926 14.0629 14.2128C12.8277 13.4995 11.4265 13.124 10.0001 13.124Z" fill="white"/>
+                      </svg>
+                    <p class="button__sign">Sign Up</p>
+                </button>
+            </div>
         </div>
     </header>
 
@@ -94,16 +101,18 @@
                         <source srcset="./images/hero/hero-mobile@1x.jpg 1x, ./images/hero/hero-mobile@1x.jpg 2x" media="(min-width: 375px)">
                         <img class="hero__image" src="" alt="Space Walking">
                     </picture>
-                    <p class="hero__left-title list-title">Space Walking</p>
-                    <div class="hero__left-wrapper">
-                        <img class="hero__left-img" src="" alt="avatar">
-                        <p class="hero__left-name">Animakid</p>
+                    <div class="hero__wrapper">
+                        <p class="hero__left-title list-title">Space Walking</p>
+                        <div class="hero__left-wrapper">
+                            <img class="hero__left-img" src="./images/hero/avatar.webp" alt="avatar">
+                            <p class="hero__left-name name">Animakid</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="collection">
+        <!-- <section class="collection">
             <div class="collection__container container">
                 <h2 class="collection__title title">Trending Collection</h2>
                 <p class="collection__subtitle subtitle">Checkout our weekly updated trending collection.</p>
@@ -142,7 +151,7 @@
                             <p class="collection__nomin list-title">DSGN Animals</p>
                             <div class="wrapper__avatar">
                                 <img class="collection__avatar" src="" alt="">
-                                <p class="collection__name">MrFox</p>
+                                <p class="collection__name name">MrFox</p>
                             </div>
                         </div>
                     </div>
@@ -181,7 +190,7 @@
                             <p class="collection__nomin list-title">DSGN Animals</p>
                             <div class="wrapper__avatar">
                                 <img class="collection__avatar" src="" alt="">
-                                <p class="collection__name">MrFox</p>
+                                <p class="collection__name name">MrFox</p>
                             </div>
                         </div>
                     </div>
@@ -220,67 +229,15 @@
                             <p class="collection__nomin list-title">DSGN Animals</p>
                             <div class="wrapper__avatar">
                                 <img class="collection__avatar" src="" alt="">
-                                <p class="collection__name">MrFox</p>
+                                <p class="collection__name name">MrFox</p>
                             </div>
                         </div>
                     </div>
                 </ul>
-
-                <!-- <ul class="collection__list">
-                    <div class="collection__wrapper">
-                        <ul class="list__wrapper">
-                            <li class="collection__item">
-                                <img class="collection__img" src="" alt="">
-                            </li>
-                            <li class="collection__item">
-                                <img class="collection__img" src="" alt="">
-                            </li>
-                            <li class="collection__item">
-                                <img class="collection__img" src="" alt="">
-                            </li>
-                            <li class="collection__item">
-                                <p class="collection__item-text">1025+</p>
-                            </li>
-                        </ul>
-                        <div class="wrapper__name">
-                            <p class="collection__nomin">DSGN Animals</p>
-                            <div class="wrapper__avatar">
-                                <img class="collection__avatar" src="" alt="">
-                                <p class="collection__name">MrFox</p>
-                            </div>
-                        </div>
-                    </div>
-                </ul>
-
-                <ul class="collection__list">
-                    <div class="collection__wrapper">
-                        <ul class="list__wrapper">
-                            <li class="collection__item">
-                                <img class="collection__img" src="" alt="">
-                            </li>
-                            <li class="collection__item">
-                                <img class="collection__img" src="" alt="">
-                            </li>
-                            <li class="collection__item">
-                                <img class="collection__img" src="" alt="">
-                            </li>
-                            <li class="collection__item">
-                                <p class="collection__item-text">1025+</p>
-                            </li>
-                        </ul>
-                        <div class="wrapper__name">
-                            <p class="collection__nomin">DSGN Animals</p>
-                            <div class="wrapper__avatar">
-                                <img class="collection__avatar" src="" alt="">
-                                <p class="collection__name">MrFox</p>
-                            </div>
-                        </div>
-                    </div>
-                </ul> -->
             </div>
-        </section>
+        </section> -->
 
-        <section class="creators">
+        <!-- <section class="creators">
             <div class="creators__container container">
                 <div class="creators__wrapper">
                     <div class="creators__wrapper-name">
@@ -479,9 +436,9 @@
                     </li>
                 </ul>
             </div>
-        </section>
+        </section> -->
 
-        <section class="categories">
+        <!-- <section class="categories">
             <div class="categories__container container">
                 <h2 class="categories__title title">Browse Categories</h2>
                 <ul class="categories__list">
@@ -612,9 +569,9 @@
                     </li>
                 </ul>
             </div>
-        </section>
+        </section> -->
 
-        <section class="discover">
+        <!-- <section class="discover">
             <div class="discover__container container">
                 <div class="discovere__wrapper">
                     <div class="discover__wrapper-name">
@@ -642,7 +599,7 @@
                             <p class="discover__name-img list-title">Distant Galaxy</p>
                             <div class="discover__wrapper-avatar">
                                 <img class="discover__avatar" src="" alt="">
-                                <p class="discover__name">MoonDancer</p>
+                                <p class="discover__name name">MoonDancer</p>
                             </div>
                             <div class="price__wrapper">
                                 <p class="discover__price">Price</p>
@@ -666,7 +623,7 @@
                             <p class="discover__name-img list-title">Life On Edena</p>
                             <div class="discover__wrapper-avatar">
                                 <img class="discover__avatar" src="" alt="">
-                                <p class="discover__name">NebulaKid</p>
+                                <p class="discover__name name">NebulaKid</p>
                             </div>
                             <div class="price__wrapper">
                                 <p class="discover__price">Price</p>
@@ -690,7 +647,7 @@
                             <p class="discover__name-img list-title">AstroFiction</p>
                             <div class="discover__wrapper-avatar">
                                 <img class="discover__avatar" src="" alt="">
-                                <p class="discover__name">Spaceone</p>
+                                <p class="discover__name name">Spaceone</p>
                             </div>
                             <div class="price__wrapper">
                                 <p class="discover__price">Price</p>
@@ -704,9 +661,9 @@
                     </li>
                 </ul>
             </div>
-        </section>
+        </section> -->
 
-        <section class="magic">
+        <!-- <section class="magic">
             <picture>
                 <source srcset="./images/magic/magic-desktop@1x.jpg 1x, ./images/magic/magic-desktop@2x.jpg 2x" media="(min-width: 1440px)">
                 <source srcset="./images/magic/magic-tablet@1x.jpg 1x, ./images/magic/magic-tablet@1x.jpg 2x" media="(min-width: 834px)">
@@ -744,9 +701,9 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
 
-        <section class="works">
+        <!-- <section class="works">
             <div class="works__container container">
                 <h2 class="works__title title">How it works</h2>
                 <p class="works__subtitle subtitle">Find out how to get started</p>
@@ -783,9 +740,9 @@
                     </li>
                 </ul>
             </div>
-        </section>
+        </section> -->
 
-        <section class="subscribe">
+        <!-- <section class="subscribe">
             <div class="subscribe__container container">
                 <picture>
                     <source srcset="./images/subscribe/subscribe-desktop@1x.jpg 1x, ./images/subscribe/subscribe-desktop@1x.jpg 2x" media="(min-width: 1440px)">
@@ -809,10 +766,10 @@
                     </form>
                 </div>
             </div>
-        </section>
+        </section> -->
     </main>
 
-    <footer class="footer">
+    <!-- <footer class="footer">
         <div class="footer__container container">
             <div class="footer__nft">
                 <div class="logo__wrapper">
@@ -902,6 +859,6 @@
                 </form>
             </div>
         </div>
-    </footer>
+    </footer> -->
 </body>
 </html>
