@@ -4,7 +4,36 @@
 }
 
 .hero__container{
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 30px;
+    row-gap: 20px;
+
+    grid-template-areas: 
+    "grid-1 grid-3"
+    "grid-2 grid-3"
+    "grid-4 grid-3"
+    "grid-5 grid-3";
+}
+
+.grid-1{
+    grid-area: grid-1;
+}
+
+.grid-2{
+    grid-area: grid-2;
+}
+
+.grid-3{
+    grid-area: grid-3;
+}
+
+.grid-4{
+    grid-area: grid-4;
+}
+
+.grid-5{
+    grid-area: grid-5;
 }
 
 .hero__title{
@@ -12,20 +41,12 @@
     @include fonts(normal, 600, 67px, 110%);
     text-transform: capitalize;
     color: var(--main-txt-cl);
-    margin-bottom: 20px;
-}
-
-.hero__subtitle{
-    margin-bottom: 30px;
-}
-
-.hero__button{
-    margin-bottom: 30px;
 }
 
 .hero__list{
     display: flex;
     gap: 30px;
+    justify-content: space-between;
 }
 
 .item__num{
@@ -33,10 +54,6 @@
     @include fonts(normal, 700, 28px, 140%);
     text-transform: capitalize;
     color: var(--main-txt-cl);
-}
-
-.hero__item{
-    width: 150px;
 }
 
 .item__text{
@@ -47,23 +64,89 @@
 }
 
 .hero__left{
-    border-radius: 22px;
+    align-self: flex-start;
+    border-radius: 30px 30px 22px 22px;
     background:  #3B3B3B;
 }
 
 .hero__image{
-    border-radius: 22px 22px 0px 0px;
+    width: 100%;
+    max-width: 510px;
+    border-radius: 28px 28px 0px 0px;
 }
 
 .hero__wrapper{
-    padding: 20px;
-}
-
-.hero__left-title{
-    margin-bottom: 10px;
+    padding: 20px 20px;
 }
 
 .hero__left-wrapper{
     display: flex;
     gap: 12px;
+}
+
+@media only screen and (max-width: 1024px){
+    .hero__title{
+        @include fonts(normal, 600, 38px, 120%);
+    }
+
+    .item__num{
+        @include fonts(normal, 700, 22px, 160%);
+    }
+
+    .item__text{
+        @include fonts(normal, 400, 16px, 140%);
+    }
+
+}
+
+@media only screen and (max-width: 950px){
+    .hero{
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    .hero__container{
+        justify-items: center;
+        grid-template-columns: 1fr;
+        column-gap: unset;
+        grid-template-areas: 
+        "grid-1"
+        "grid-2"
+        "grid-3"
+        "grid-4"
+        "grid-5";
+    }
+
+    .hero__left{
+        width: 100%;
+        max-width: 375px;
+    }
+}
+
+@media only screen and (max-width: 425px){
+    .hero{
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .hero__container{
+        row-gap: unset;
+    }
+
+    .hero__title{
+        @include fonts(normal, 600, 28px, 140%);
+        margin-bottom: 10px;
+    }
+
+    .hero__subtitle {
+        @include fonts(normal, 400, 16px, 140%);
+        margin-bottom: 40px;
+    }
+
+    .hero__left {
+        margin-bottom: 40px;
+    }
+
+    .grid-4{
+        margin-bottom: 40px;
+    }
 }
