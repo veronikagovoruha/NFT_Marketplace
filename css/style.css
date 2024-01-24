@@ -266,14 +266,13 @@ ul {
 
 .hero__left {
   align-self: flex-start;
-  border-radius: 30px 30px 22px 22px;
+  border-radius: 40px 40px 22px 22px;
   background: #3B3B3B;
 }
 
 .hero__image {
   width: 100%;
-  max-width: 510px;
-  border-radius: 28px 28px 0px 0px;
+  border-radius: 40px 40px 0px 0px;
 }
 
 .hero__wrapper {
@@ -311,14 +310,15 @@ ul {
     padding-bottom: 60px;
   }
   .hero__container {
-    justify-items: center;
     grid-template-columns: 1fr;
     column-gap: unset;
     grid-template-areas: "grid-1" "grid-2" "grid-3" "grid-4" "grid-5";
   }
-  .hero__left {
-    width: 100%;
-    max-width: 375px;
+  .hero__button {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    width: 350px;
   }
 }
 @media only screen and (max-width: 425px) {
@@ -347,7 +347,11 @@ ul {
     margin-bottom: 40px;
   }
   .grid-4 {
+    display: flex;
     margin-bottom: 40px;
+  }
+  .hero__button {
+    width: 100%;
   }
 }
 
