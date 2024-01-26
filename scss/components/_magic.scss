@@ -1,0 +1,43 @@
+.discover__img-wrapper{
+    position: relative;
+}
+
+.magic__gradient{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: linear-gradient(180deg, rgba(162, 89, 255, 0.00) 0%, #A259FF 100%);
+    z-index: 2;
+}
+
+.magic__container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "magic__grid-1 magic__grid-4"
+    "magic__grid-2 magic__grid-4"
+    "magic__grid-3 magic__grid-4"
+    ;
+
+    position: absolute;
+    left: 116px;
+    bottom: 60px;
+    z-index: 3;
+}
+
+.magic__grid-1{
+    grid-area: magic__grid-1;
+}
+
+.magic__grid-2{
+    grid-area: magic__grid-2;
+}
+
+.magic__grid-3{
+    grid-area: magic__grid-3;
+}
+
+.magic__grid-4{
+    grid-area: magic__grid-4;
+}

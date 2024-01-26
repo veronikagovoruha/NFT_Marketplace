@@ -416,12 +416,12 @@ ul {
 }
 
 .collection__item-text {
-  padding: 32px 15px;
   font-family: var(--secondary-font);
   font-style: normal;
   font-weight: 700;
   font-size: 22px;
   line-height: 160%;
+  padding: 32px 15px;
   color: var(--main-txt-cl);
 }
 
@@ -653,24 +653,37 @@ ul {
 }
 
 .categories__img-wrapper {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
   position: relative;
-  display: grid;
-  place-items: center;
+  overflow: hidden;
 }
 
 .categories__img {
   width: 100%;
   border-radius: 20px 20px 0px 0px;
+  z-index: 1;
 }
 
 .blur {
   position: absolute;
-  width: 100%;
+  top: 0;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  left: 0;
+  right: 0;
+  bottom: 0;
   backdrop-filter: blur(7.5px);
+  background: rgba(255, 255, 255, 0.1);
+  z-index: 2;
 }
 
 .categories__svg {
   position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
 }
 
 @media only screen and (max-width: 834px) {
@@ -692,11 +705,18 @@ ul {
     line-height: 140%;
   }
 }
-@media only screen and (max-width: 426px) {
+@media only screen and (max-width: 768px) {
   .categories__list {
     grid-template-columns: repeat(2, 1fr);
     row-gap: 20px;
     column-gap: 20px;
+  }
+  .categories__img {
+    width: 100%;
+    border-radius: 55px 55px 0px 0px;
+  }
+  .categories__item {
+    border-radius: 55px 55px 20px 20px;
   }
 }
 .discover {
@@ -824,6 +844,46 @@ ul {
     display: block;
   }
 }
+.discover__img-wrapper {
+  position: relative;
+}
+
+.magic__gradient {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: linear-gradient(180deg, rgba(162, 89, 255, 0) 0%, #A259FF 100%);
+  z-index: 2;
+}
+
+.magic__container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas: "magic__grid-1 magic__grid-4" "magic__grid-2 magic__grid-4" "magic__grid-3 magic__grid-4";
+  position: absolute;
+  left: 116px;
+  bottom: 60px;
+  z-index: 3;
+}
+
+.magic__grid-1 {
+  grid-area: magic__grid-1;
+}
+
+.magic__grid-2 {
+  grid-area: magic__grid-2;
+}
+
+.magic__grid-3 {
+  grid-area: magic__grid-3;
+}
+
+.magic__grid-4 {
+  grid-area: magic__grid-4;
+}
+
 .works {
   padding-top: 80px;
   padding-bottom: 80px;
@@ -915,6 +975,111 @@ ul {
   .works__item-title,
   .works__item-subtitle {
     text-align: start;
+  }
+}
+.subscribe {
+  padding-top: 40px;
+  padding-bottom: 80px;
+}
+
+.subscribe__container {
+  display: flex;
+  padding: 60px;
+  border-radius: 20px;
+  background: #3B3B3B;
+}
+
+.subscribe__img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+.subscribe__left {
+  margin-left: 80px;
+}
+
+.subscribe__title {
+  margin-bottom: 10px;
+}
+
+.subscribe__subtitle {
+  margin-bottom: 40px;
+}
+
+.subscribe__form {
+  display: flex;
+  gap: 12px;
+  border-radius: 20px;
+  background-color: white;
+  width: 300px;
+}
+
+.subscribe__input {
+  border-radius: 20px;
+  background: var(--main-txt-cl);
+  border: none;
+}
+
+.subscribe__input::placeholder {
+  font-family: var(--main-font);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  padding-left: 20px;
+  color: var(--btn-txt-cl);
+}
+
+@media only screen and (max-width: 835px) {
+  .subscribe__left {
+    margin-left: 30px;
+  }
+  .subscribe__title {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 140%;
+  }
+  .subscribe__subtitle {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+  }
+  .subscribe__form {
+    flex-direction: column;
+    gap: 16px;
+    background-color: transparent;
+  }
+  .subscribe__input {
+    padding: 12px 20px;
+  }
+  .subscribe__button {
+    display: flex;
+    justify-content: center;
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+}
+@media only screen and (max-width: 619px) {
+  .subscribe {
+    padding-bottom: 40px;
+  }
+  .subscribe__container {
+    flex-direction: column;
+    justify-content: center;
+    background-color: transparent;
+  }
+  .subscribe__form {
+    margin: 0 auto;
+  }
+  .subscribe__left {
+    display: flex;
+    flex-direction: column;
+    margin-left: unset;
+  }
+  .subscribe__img {
+    margin-bottom: 30px;
   }
 }
 .discover {
