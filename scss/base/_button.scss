@@ -18,3 +18,8 @@
     background-color: transparent;
     border: 2px solid var(--btn-color);
 }
+
+.btn:hover,
+.btn:focus{
+    transform: scale(1.02);
+}

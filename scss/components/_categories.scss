@@ -17,6 +17,12 @@
 .categories__item{
     border-radius: 20px;
     background: #3B3B3B;
+    cursor: pointer;
+}
+
+.categories__item:hover,
+.categories__item:focus{
+    transform: scale(1.02);
 }
 
 .categories__text{

@@ -35,6 +35,13 @@
     padding: 20px;
     border-radius: 20px;
     background: #3B3B3B;
+
+    cursor: pointer;
+}
+
+.creators__item:hover,
+.creators__item:focus{
+    transform: scale(1.01);
 }
 
 .creators__num{

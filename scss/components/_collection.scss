@@ -54,6 +54,14 @@
 .collection__image{
     width: 100%;
     border-radius: 25px;
+    cursor: pointer;
+}
+
+.collection__image:hover,
+.collection__image:focus,
+.collection__item-purple:hover,
+.collection__item-purple:focus{
+    transform: scale(1.02);
 }
 
 .collection__item-purple{
@@ -61,6 +69,7 @@
     height: 100px;
     border-radius: 20px;
     background: var(--btn-color);
+    cursor: pointer;
 }
 
 .collection__item-text{

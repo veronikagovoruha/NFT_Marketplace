@@ -126,6 +126,11 @@ ul {
   border: 2px solid var(--btn-color);
 }
 
+.btn:hover,
+.btn:focus {
+  transform: scale(1.02);
+}
+
 .header {
   padding: 20px 50px;
 }
@@ -169,9 +174,7 @@ ul {
 
 .header__link:hover,
 .header__link:focus {
-  -webkit-transform: scale(1.2);
-  -ms-transform: scale(1.2);
-  transform: scale(1.2);
+  opacity: 0.7;
   transition: var(--transition-fast);
 }
 
@@ -268,6 +271,12 @@ ul {
   align-self: flex-start;
   border-radius: 40px 40px 22px 22px;
   background: #3B3B3B;
+  cursor: pointer;
+}
+
+.hero__left:hover,
+.hero__left:focus {
+  transform: scale(1.02);
 }
 
 .hero__image {
@@ -406,6 +415,14 @@ ul {
 .collection__image {
   width: 100%;
   border-radius: 25px;
+  cursor: pointer;
+}
+
+.collection__image:hover,
+.collection__image:focus,
+.collection__item-purple:hover,
+.collection__item-purple:focus {
+  transform: scale(1.02);
 }
 
 .collection__item-purple {
@@ -413,6 +430,7 @@ ul {
   height: 100px;
   border-radius: 20px;
   background: var(--btn-color);
+  cursor: pointer;
 }
 
 .collection__item-text {
@@ -517,6 +535,12 @@ ul {
   padding: 20px;
   border-radius: 20px;
   background: #3B3B3B;
+  cursor: pointer;
+}
+
+.creators__item:hover,
+.creators__item:focus {
+  transform: scale(1.01);
 }
 
 .creators__num {
@@ -646,6 +670,12 @@ ul {
 .categories__item {
   border-radius: 20px;
   background: #3B3B3B;
+  cursor: pointer;
+}
+
+.categories__item:hover,
+.categories__item:focus {
+  transform: scale(1.02);
 }
 
 .categories__text {
@@ -748,6 +778,12 @@ ul {
 .discover__item {
   border-radius: 20px;
   background: #3B3B3B;
+}
+
+.discover__item:hover,
+.discover__item:focus {
+  transform: scale(1.02);
+  transition: var(--transition-fast);
 }
 
 .discover__img {
@@ -1116,6 +1152,12 @@ ul {
 .discover__item {
   border-radius: 20px;
   background: #3B3B3B;
+}
+
+.discover__item:hover,
+.discover__item:focus {
+  transform: scale(1.02);
+  transition: var(--transition-fast);
 }
 
 .discover__img {

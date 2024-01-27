@@ -29,6 +29,12 @@
     background: #3B3B3B;
 }
 
+.discover__item:hover,
+.discover__item:focus{
+    transform: scale(1.02);
+    transition: var(--transition-fast);
+}
+
 .discover__img{
     width: 100%;
     border-radius: 20px 20px 0px 0px;
