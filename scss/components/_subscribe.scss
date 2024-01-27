@@ -10,12 +10,17 @@
     background: #3B3B3B;
 }
 
+.subscribe__img-wrapper{
+    flex: 1;
+}
+
 .subscribe__img{
     width: 100%;
     border-radius: 20px;
 }
 
 .subscribe__left{
+    flex: 1;
     margin-left: 80px;
 }
 

@@ -989,12 +989,17 @@ ul {
   background: #3B3B3B;
 }
 
+.subscribe__img-wrapper {
+  flex: 1;
+}
+
 .subscribe__img {
   width: 100%;
   border-radius: 20px;
 }
 
 .subscribe__left {
+  flex: 1;
   margin-left: 80px;
 }
 
@@ -1205,6 +1210,132 @@ ul {
   }
   .discover__item:last-child {
     display: block;
+  }
+}
+.footer {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #3B3B3B;
+}
+
+.footer__container {
+  border-bottom: 1px solid #858584;
+}
+
+.footer__grid-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-bottom: 30px;
+}
+
+.footer__title {
+  font-family: var(--secondary-font);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 160%;
+  text-transform: capitalize;
+  color: var(--main-txt-cl);
+  margin-bottom: 25px;
+}
+
+.explore__item {
+  margin-bottom: 25px;
+}
+
+.footer__nft {
+  margin-right: 84px;
+}
+
+.footer__nft-title {
+  margin-top: 25px;
+  margin-bottom: 20px;
+}
+
+.digest__subtitle {
+  margin-bottom: 20px;
+}
+
+.footer__subtitle {
+  font-family: var(--main-font);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  color: #cccccc;
+}
+
+.social__title {
+  margin-bottom: 15px;
+}
+
+.social__list {
+  display: flex;
+  gap: 10px;
+}
+
+.footer__template {
+  font-family: var(--main-font);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 110%;
+  color: #cccccc;
+  margin-top: 30px;
+}
+
+.footer__container-template {
+  width: 100%;
+  max-width: 1050px;
+  box-sizing: border-box;
+  margin: 20px auto 0 auto;
+}
+
+.footer__container-container {
+  width: 100%;
+  max-width: 1050px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .subscribe__form {
+    flex-direction: column;
+    background-color: transparent;
+  }
+  .subscribe__input {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+}
+@media only screen and (max-width: 835px) {
+  .footer__grid-wrapper {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .footer__form {
+    flex-direction: row;
+    background-color: #ffffff;
+  }
+  .footer__container-container {
+    max-width: 690px;
+  }
+  .footer__container-template {
+    max-width: 690px;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .footer__container-container {
+    max-width: 315px;
+  }
+  .footer__container-template {
+    max-width: 315px;
+  }
+  .footer__form {
+    flex-direction: column;
+    background-color: transparent;
+    margin: unset;
   }
 }
 
