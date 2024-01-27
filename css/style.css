@@ -920,6 +920,70 @@ ul {
   grid-area: magic__grid-4;
 }
 
+.magic__wrapper-name {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 20px;
+  border-radius: 20px;
+  background: #3B3B3B;
+  margin-bottom: 30px;
+}
+
+.magic__title {
+  margin-bottom: 30px;
+}
+
+.magic__button {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 22px 50px;
+  border: none;
+  border-radius: 20px;
+}
+
+.magic__button-text {
+  font-family: var(--main-font);
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 140%;
+  color: var(--btn-txt-cl);
+}
+
+.magic__right {
+  padding: 30px;
+  border-radius: 20px;
+  background: rgba(59, 59, 59, 0.5);
+  backdrop-filter: blur(5px);
+}
+
+.magic__right-wrapper {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.magic__right-title {
+  font-family: var(--secondary-font);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 110%;
+  color: var(--main-txt-cl);
+}
+
+.magic__time {
+  font-family: var(--secondary-font);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 120%;
+  text-transform: capitalize;
+  color: var(--main-txt-cl);
+}
+
 .works {
   padding-top: 80px;
   padding-bottom: 80px;
@@ -1307,6 +1371,10 @@ ul {
   color: #cccccc;
 }
 
+.footer__form {
+  gap: unset;
+}
+
 .social__title {
   margin-bottom: 15px;
 }
@@ -1342,13 +1410,18 @@ ul {
 }
 
 @media only screen and (max-width: 1024px) {
-  .subscribe__form {
+  .footer__form {
     flex-direction: column;
     background-color: transparent;
   }
-  .subscribe__input {
+  .footer__input {
     padding-top: 16px;
     padding-bottom: 16px;
+    margin-bottom: 10px;
+  }
+  .footer__btn {
+    display: flex;
+    justify-content: center;
   }
 }
 @media only screen and (max-width: 835px) {
@@ -1367,12 +1440,20 @@ ul {
     max-width: 690px;
   }
 }
+@media only screen and (max-width: 619px) {
+  .footer__form {
+    margin: unset;
+  }
+}
 @media only screen and (max-width: 425px) {
   .footer__container-container {
-    max-width: 315px;
+    max-width: 340px;
   }
   .footer__container-template {
-    max-width: 315px;
+    max-width: 340px;
+  }
+  .footer__nft {
+    margin-right: unset;
   }
   .footer__form {
     flex-direction: column;
