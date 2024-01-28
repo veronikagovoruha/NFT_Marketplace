@@ -14,6 +14,7 @@
 
 .magic__container{
     display: grid;
+    grid-row-gap:30px;
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas: "magic__grid-1 magic__grid-4"
     "magic__grid-2 magic__grid-4"
@@ -21,7 +22,8 @@
     ;
 
     position: absolute;
-    left: 116px;
+    left: 50%;
+    transform: translateX(-50%);
     bottom: 60px;
     z-index: 3;
 }
@@ -46,29 +48,41 @@
 .magic__wrapper-name{
     display: flex;
     align-items: center;
+    align-self: flex-start;
+    justify-self: flex-start;
     gap: 12px;
 
     padding: 10px 20px;
     border-radius: 20px;
     background: #3B3B3B;
-
-    margin-bottom: 30px;
 }
 
-.magic__title{
-    margin-bottom: 30px;
+.magic__name{
+    font-family: var(--main-font);
+    @include fonts(normal, 400, 16px, 140%);
+    color: var(--main-txt-cl);
 }
 
 .magic__button{
     display: flex;
     align-items: center;
+    justify-self: flex-start;
     gap: 12px;
 
     padding: 22px 50px;
     border: none;
     border-radius: 20px;
+    cursor: pointer;
 }
 
+.magic__button:hover,
+.magic__button:focus{
+    transform: scale(1.02);
+}
+
+.magic__img-wrapper{
+    position: relative;
+}
 .magic__button-text{
     font-family: var(--main-font);
     @include fonts(normal, 600, 16px, 140%);
@@ -76,6 +90,8 @@
 }
 
 .magic__right{
+    justify-self: flex-end;
+    align-self: flex-end;
     padding: 30px;
     border-radius: 20px;
     background: rgba(59, 59, 59, 0.50);
@@ -99,4 +115,62 @@
     @include fonts(normal, 700, 38px, 120%);
     text-transform: capitalize;
     color: var(--main-txt-cl);
+}
+
+.magic__wrapper-hours{
+    position: relative;
+    margin-right: 10px;
+}
+
+.magic__wrapper-minutes{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.magic__wrapper-seconds{
+    margin-left: 10px;
+}
+
+.magic__wrapper-hours::after{
+    content: ':';
+    position: absolute;
+    left: 54px;
+    bottom: 18px;
+
+    font-family: var(--secondary-font);
+    @include fonts(normal, 700, 28px, 140%);
+    text-transform: capitalize;
+    color: var(--main-txt-cl);
+}
+
+.magic__wrapper-minutes::after{
+    content: ':';
+    position: absolute;
+    left: 162px;
+    bottom: 47px;
+
+    font-family: var(--secondary-font);
+    @include fonts(normal, 700, 28px, 140%);
+    text-transform: capitalize;
+    color: var(--main-txt-cl);
+}
+
+@media only screen and (max-width: 835px){
+    .magic__title{
+        @include fonts(normal, 600, 38px, 120%);
+    }
+}
+
+@media only screen and (max-width: 665px){
+    .magic__container{
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-areas: "magic__grid-1"
+        "magic__grid-2"
+        "magic__grid-4"
+        "magic__grid-3";
+    }
+
+    .magic__right {
+        justify-self: flex-start;
+    }
 }
