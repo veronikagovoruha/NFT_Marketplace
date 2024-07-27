@@ -1,3 +1,5 @@
+$paddingContainer: 20px;
+
 .footer{
     padding-top: 40px;
     padding-bottom: 40px;
@@ -31,13 +33,20 @@
 }
 
 .footer__nft-title{
+    font-family: var(--main-font);
+    @include fonts(normal, 400, 16px, 140%);
+    color: #cccccc;
     margin-top: 25px;
     margin-bottom: 20px;
 }
 
 .digest__subtitle{
+    font-family: var(--main-font);
+    @include fonts(normal, 400, 16px, 140%);
+    color: #cccccc;
     margin-bottom: 20px;
 }
+
 
 .footer__subtitle{
     font-family: var(--main-font);
@@ -45,17 +54,34 @@
     color: #cccccc;
 }
 
+.footer__subtitle:hover,
+.footer__subtitle:focus{
+    opacity: .4;
+}
+
 .footer__form{
     gap: unset;
 }
 
 .social__title{
+    font-family: var(--main-font);
+    @include fonts(normal, 400, 16px, 140%);
+    color: #cccccc;
     margin-bottom: 15px;
 }
 
 .social__list{
     display: flex;
     gap: 10px;
+}
+
+.social__item:hover{
+    cursor: pointer;
+}
+
+.social__svg:hover,
+.social__svg:focus{
+    opacity: .6;
 }
 
 .footer__template{
@@ -72,8 +98,6 @@
   
     margin: 20px auto 0 auto;
 }
-
-$paddingContainer: 20px;
 
 .footer__container-container{
     width: 100%;

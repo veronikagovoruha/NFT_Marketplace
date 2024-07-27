@@ -1434,11 +1434,23 @@ ul {
 }
 
 .footer__nft-title {
+  font-family: var(--main-font);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  color: #cccccc;
   margin-top: 25px;
   margin-bottom: 20px;
 }
 
 .digest__subtitle {
+  font-family: var(--main-font);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  color: #cccccc;
   margin-bottom: 20px;
 }
 
@@ -1451,17 +1463,37 @@ ul {
   color: #cccccc;
 }
 
+.footer__subtitle:hover,
+.footer__subtitle:focus {
+  opacity: 0.4;
+}
+
 .footer__form {
   gap: unset;
 }
 
 .social__title {
+  font-family: var(--main-font);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  color: #cccccc;
   margin-bottom: 15px;
 }
 
 .social__list {
   display: flex;
   gap: 10px;
+}
+
+.social__item:hover {
+  cursor: pointer;
+}
+
+.social__svg:hover,
+.social__svg:focus {
+  opacity: 0.6;
 }
 
 .footer__template {
